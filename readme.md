@@ -1,4 +1,4 @@
-in# Random as a service
+# Random as a service
 Hosted at [random.wesring.com](https://random.wesring.com)
 
 ## About
