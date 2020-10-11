@@ -20,6 +20,18 @@ curl https://random.wesring.com -H "size : 1000"
 curl https://random.wesring.com -H "size : 10" -H "Content-Type : application/plain"
 ```
 
+### Note
+ If you are going to re-create this, make sure to add a wrangler.toml with your info. 
+```toml
+name = "randomaas"
+type = "rust"
+account_id = "MY_ID"
+workers_dev = true
+route = ""
+zone_id = "MY_ZONE"
+
+```
+
 [1] randomness not proven \
 [2] not guaranteed \
 [3] free tier limited to 100,000 calls per day. Void where prohibited \
