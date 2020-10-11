@@ -21,7 +21,7 @@ curl https://random.wesring.com -H "size : 10" -H "Content-Type : application/pl
 ```
 
 ### Note
- If you are going to re-create this, make sure to add a wrangler.toml with your info. 
+ If you are going to re-create this, make sure to add a wrangler.toml with your info.
 ```toml
 name = "randomaas"
 type = "rust"
@@ -31,6 +31,8 @@ route = ""
 zone_id = "MY_ZONE"
 
 ```
+Use `wrangler publish` to upload the API to cloudflare.
+
 
 [1] randomness not proven \
 [2] not guaranteed \
