@@ -10,8 +10,8 @@ Still unsure? Worried about the security of the random-ness? Don't! We use **Mil
 
 
 ## tl;dr
-This is a cloudflare worker I made to test how their worker system works, along with usage of wasm and Rust. by default it returns in the following schema: 
-`{"value":"KKpR1al9JZTFOHXeGrb9yUuhppiunC0O"}` . Feel free to use it for whatever you want. HTTPS only. use the "size" header to change the size, and use any Content-Type header other then "application/json" to get a raw output. It also accepts a "size" url param. https://random.wesring.com/?size=100 . Since I'm using the cloudflare worker free tier, the endpoint is capped at 100,000 calls per day, with a maximum compute time of 10ms. Because of that 10ms time cap, very large responses timeout. BSD licensed.
+This is a cloudflare worker I made to test how their worker system works, and lets me play with wasm and Rust. By default the API returns in the following schema: 
+`{"value":"KKpR1al9JZTFOHXeGrb9yUuhppiunC0O"}` . Feel free to use the app for whatever you want. HTTPS only. Use the "size" header to change the size, and use any "Content-Type" header that isn't "application/json" to get a raw output. The API also accepts a "size" url param. https://random.wesring.com/?size=100 . Since I am using the cloudflare worker free tier, the endpoint is capped at 100,000 calls per day, with a maximum compute time of 10ms. Because of that 10ms time cap, very large responses might timeout. BSD licensed.
 
 ## Curl
 Example curl: 
