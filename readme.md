@@ -1,4 +1,4 @@
-in# Random as a service
+# Random as a service
 Hosted at [random.wesring.com](https://random.wesring.com)
 
 ## About
@@ -18,6 +18,18 @@ Example curl:
 ``` bash
 curl https://random.wesring.com -H "size : 1000"
 curl https://random.wesring.com -H "size : 10" -H "Content-Type : application/plain"
+```
+
+### Note
+ If you are going to re-create this, make sure to add a wrangler.toml with your info. 
+```toml
+name = "randomaas"
+type = "rust"
+account_id = "MY_ID"
+workers_dev = true
+route = ""
+zone_id = "MY_ZONE"
+
 ```
 
 [1] randomness not proven \
